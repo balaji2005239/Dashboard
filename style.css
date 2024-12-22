@@ -1,0 +1,181 @@
+/* Reset margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Left Section */
+.left {
+    width: 20%;
+    background-color: #004f39;
+    float: left;
+    height: 140vh;
+    color: white;
+    padding: 10px;
+}
+
+.left h1 {
+    margin-bottom: 20px;
+}
+
+.left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left ul li {
+    margin: 15px 0;
+}
+
+/* Right Section */
+.right {
+    width: 80%;
+    height: 140vh;
+    background-color: #fefaca;
+    float: left;
+}
+
+/* Header Section */
+.header {
+    height: 25%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Theader Section */
+.theader {
+    height: 75%; /* Takes 25% of the header height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid white;
+}
+
+/* Right Section: Search Icon and Bar */
+.theader .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+#search {
+    padding: 5px;
+    width: 100vh;
+    border-radius: 25px;
+    border: none;
+}
+
+/* Left Section: Message Icon, Profile, and Name */
+.theader .left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+#searchicon img, #profile {
+    height: 30px;
+    width: 30px;
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+/* Details Section */
+.details {
+    height: 75%; /* Remaining 75% of the header */
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.details.left-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.maincontent {
+    height: 70%;
+    padding: 20px;
+}
+.logo{
+    display: inline-block;
+}
+.namegreeting{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.logo img{
+    border-radius: 50%;
+    height: 80px; 
+    width: 80px; 
+}
+.projectcontainer {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ; /* Three columns with flexible widths */
+    grid-auto-rows: minmax(100px, auto); /* Define row height */
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 5px;
+}
+.box{
+    padding: 1rem;
+    padding-left: 50px;
+    background-color: white;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 10px solid #004f39;
+    border-radius: 10%;
+}
+.lsidecontainer{
+    width: 65%;
+    height: 95vh;
+    float: left;
+}
+.headingcontainer{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto); /* Define row height */
+    row-gap: 20px;
+    padding: 5px;
+   
+}
+.rsidecontainer{
+    width: 35%;
+    height: 95vh;
+    float: left;
+    padding: 20px;
+}
+.headingcontainer .box{
+    height: 300px;
+    width: 300px;
+}
+.button{
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30%;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #fefaca;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  .box:hover {
+    transform: scale(1.05); /* Enlarges the block by 20% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
